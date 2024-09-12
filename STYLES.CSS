@@ -1,0 +1,269 @@
+/* Estilos Globais */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalhos */
+h1, h2 {
+    color: #1f1e1e;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.2em;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Banner */
+.banner {
+    background: url('imagens/banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Seção de Produtos */
+#produtos .galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.produto {
+    flex-basis: 30%;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto p {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Seções Sobre e Contato */
+#sobre, #contato {
+    margin: 40px 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+#sobre p, #contato p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Carrossel */
+.carousel-container {
+    position: relative;
+    max-width: 60%;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.carousel-img:hover {
+    transform: scale(1.1);
+}
+
+/* Botões de Navegação do Carrossel */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Esconder imagens inativas */
+.carousel-img:not(.active) {
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .produto {
+        flex-basis: 45%;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+    }
+
+    .carousel-img {
+        width: 200px;
+    }
+
+    .banner {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .produto {
+        flex-basis: 100%;
+    }
+
+    .carousel-img {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+/* Estilos para as imagens de contato */
+#contato img {
+    width: 150px;  /* Define uma largura fixa */
+    height: 150px; /* Define uma altura fixa para garantir que ambas fiquem iguais */
+    object-fit: cover; /* Ajusta a imagem para preencher a área sem distorcer */
+    border-radius: 8px; /* Adiciona bordas arredondadas para um visual mais agradável */
+    margin: 0 auto; /* Centraliza as imagens */
+    display: block; /* Garante que as imagens se comportem como blocos */
+}
+
+/* Ajusta o layout das imagens e textos na seção de contato */
+#contato tbody tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  /* Espaçamento entre as imagens e o texto */
+    margin-bottom: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #contato tbody tr {
+        flex-direction: column;
+    }
+
+    #contato img {
+        width: 120px;  /* Ajusta o tamanho das imagens em telas menores */
+        height: 120px;
+    }
+}

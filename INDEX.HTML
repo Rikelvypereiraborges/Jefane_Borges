@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semijoias Elegantes - Jefane Borges</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Semijoias Elegantes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner da Home -->
+    <section id="home">
+        <div class="banner">
+            <img src="banner-img/banner.png" alt="Banner de Semijoias" />
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos">
+        <div class="container">
+            <h2>Produtos</h2>
+            <div class="galeria">
+                <div class="produto">
+                    <img src="jefane/IMG-20240911-WA0001.jpg" alt="Anel Elegante" />
+                    <p>Anel Elegante</p>
+                </div>
+                <div class="produto">
+                    <img src="jefane/IMG-20240911-WA0002.jpg" alt="Colar Fino" />
+                    <p>Colar Fino</p>
+                </div>
+                <div class="produto">
+                    <img src="jefane/IMG-20240911-WA0003.jpg" alt="Pulseira Delicada" />
+                    <p>Pulseira Delicada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel de Produtos -->
+    <section id="carrossel">
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="jefane/IMG-20240911-WA0001.jpg" alt="Semijoia 1" class="carousel-img active" />
+                <img src="jefane/IMG-20240911-WA0002.jpg" alt="Semijoia 2" class="carousel-img" />
+                <img src="jefane/IMG-20240911-WA0003.jpg" alt="Semijoia 3" class="carousel-img" />
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Jefane Borges, tenho 27 anos e sou vendedora de semi-joias em Catu, Bahia. Com paixão por moda e acessórios, dedico-me a oferecer peças únicas e de qualidade que realçam a beleza e a personalidade de cada cliente. Acredito que cada detalhe faz a diferença, e estou sempre em busca de tendências e novidades para proporcionar a melhor experiência possível. Seja para ocasiões especiais ou para o dia a dia, minhas peças trazem um toque de elegância e estilo. Vamos juntos encontrar a peça perfeita para você!</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelo e-mail: <strong>contato@semijoias.com</strong></p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="https://www.instagram.com/jefaneborges/">
+                                <img src="banner-img/v982-d3-04-fotor-20240912151935-removebg-preview.png" alt="Instagram Jefane Borges" />
+                            </a>
+                        </td>
+                        <td>Instagram: @jefaneborges</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://wa.me/557196506542">
+                                <img src="banner-img/fotor-20240912152020-removebg-preview.png" alt="WhatsApp Jefane Borges" />
+                            </a>
+                        </td>
+                        <td>WhatsApp: (71) 9 9650-6542</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Script JS -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
