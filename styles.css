@@ -266,3 +266,20 @@ nav ul li a:hover {
 .Titulo1 {
     text-align: center;
 }
+p {
+    font-size: 1.1rem;  /* Tamanho maior e responsivo */
+    line-height: 1.8;   /* Aumenta o espaçamento entre linhas */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    p {
+        font-size: 1rem;  /* Reduz um pouco o tamanho em tablets e telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 0.9rem;  /* Ajuste adicional para telas bem pequenas */
+    }
+}
